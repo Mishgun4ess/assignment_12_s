@@ -3,13 +3,13 @@ def bubble_sort(numbers):
     #copy
     sorted_numbers = numbers[:]
 
-    number_of_items = len(sorted_numbers)
+    n = len(sorted_numbers)
     comparisons = 0
 
-    for num in range(number_of_items - 1):
+    for num in range(n - 1):
 
         #compare
-        for position in range(number_of_items - 1 - num):
+        for position in range(n - 1 - num):
             comparisons += 1
 
             if sorted_numbers[position] > sorted_numbers[position + 1]:
